@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4211734913015771188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4211734913015771190}
+  - component: {fileID: 4211734913015771189}
+  m_Layer: 0
+  m_Name: ObjectPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4211734913015771190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4211734913015771188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4211734913015771189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4211734913015771188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688402511ce59f94c8194820a8d8c25d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - tag: PlayerDash
+    prefab: {fileID: 4132797113730249297, guid: 0894607c42c80e64aaa1f3798e5315e3,
+      type: 3}
+    size: 50
+  - tag: SmallBullet
+    prefab: {fileID: 6034406803125987479, guid: f40ac1dced1c8984ba8c65ff144f51af,
+      type: 3}
+    size: 1000
+  - tag: TripleBullet
+    prefab: {fileID: 6034406803125987479, guid: 9a4cea7c9e4743b4fa6b3d2406e8a236,
+      type: 3}
+    size: 1000
+  - tag: SpikeBullet
+    prefab: {fileID: 6034406803125987479, guid: 0b4cce05cb79b34459bf6c709f54fe13,
+      type: 3}
+    size: 1000
